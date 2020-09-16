@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello View Template</title>
+</head>
+<body>
+    <div id="app">
+        <hello-world v-bind:places-results="{{places_results}}"
+        ></hello-world>
+    </div>
+
+    <script defer type="text/javascript" src="{% static 'HelloVue/HelloVue.min.js' %}"></script>
+</body>
+</html>
